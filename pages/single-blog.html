@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/output.css" />
-    <title>Quantum Computing Revolution</title>
+    <title>StarterTech</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -15,98 +15,104 @@
   <body
     class="bg-primary-dark text-white dark:bg-primary-light dark:text-gray-900 min-h-screen transition-colors duration-300 font-sans"
   >
-    <div class="container mx-auto px-6 py-8">
-      <!-- Theme Toggle -->
-      <div class="absolute top-4 right-6">
-        <button
-          id="themeToggle"
-          class="bg-indigo-500 dark:bg-indigo-300 text-white dark:text-gray-800 px-4 py-2 rounded-full hover:shadow-lg transition"
+  <div class="container mx-auto px-6 py-8">
+    <!-- Theme Toggle -->
+    <div class="absolute top-4 right-6">
+      <button
+        id="themeToggle"
+        class="bg-primary-dark dark:bg-indigo-300 text-white dark:text-gray-800 px-4 py-2 rounded-full hover:shadow-lg transition"
+      >
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 relative">
+      <div class="flex items-center space-x-4">
+        <div
+          class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
         >
-          Toggle Theme
-        </button>
+          <span class="text-xl font-bold">S.T</span>
+        </div>
+        <h1 class="text-4xl font-extrabold tracking-wider dark:text-gray-800">
+          StarterTech
+        </h1>
       </div>
 
-      <!-- Header -->
-      <header class="flex justify-between items-center p-4 relative">
-        <div class="flex items-center space-x-4">
-          <div
-            class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
-          >
-            <span class="text-xl font-bold">N</span>
-          </div>
-          <h1 class="text-4xl font-extrabold tracking-wider dark:text-gray-800">
-            NAS NEWS
-          </h1>
-        </div>
+      <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
+        <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+        <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+        <div class="w-6 h-1 bg-gray-600"></div>
+      </div>
 
-        <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
-          <div class="w-6 h-1 bg-gray-600 mb-1"></div>
-          <div class="w-6 h-1 bg-gray-600 mb-1"></div>
-          <div class="w-6 h-1 bg-gray-600"></div>
-        </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6">
+          <li>
+            <a
+              href="../index.html"
+              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="about-us.html"
+              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-        <nav class="hidden md:block">
-          <ul class="flex space-x-6">
-            <li>
-              <a
-                href="../index.html"
-                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="blog.html"
-                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
-                >Blogs</a
-              >
-            </li>
-            <li>
-              <a
-                href="about-us.html"
-                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <nav
-          id="mobileMenu"
-          class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
-        >
-          <ul class="flex flex-col items-center py-4 space-y-4">
-            <li>
-              <a
-                href="single-blog.html"
-                class="text-lg text-gray-700 hover:text-indigo-600"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="single-blog.html"
-                class="text-lg text-gray-700 hover:text-indigo-600"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="single-blog.html"
-                class="text-lg text-gray-700 hover:text-indigo-600"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav
+        id="mobileMenu"
+        class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
+      >
+        <ul class="flex flex-col items-center py-4 space-y-4">
+          <li>
+            <a
+              href="../index.html"
+              class="text-lg text-gray-700 hover:text-indigo-400"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="text-lg text-gray-700 hover:text-indigo-400"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="about-us.html"
+              class="text-lg text-gray-700 hover:text-indigo-400"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-lg text-gray-700 hover:text-indigo-400"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
       <div class="max-w-4xl mx-auto px-4 py-12 bg-inherit rounded-lg my-8">
         <!-- Main Article -->

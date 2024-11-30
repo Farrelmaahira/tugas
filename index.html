@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexus Global News</title>
+    <title>StarterTech</title>
     <link rel="stylesheet" href="src/output.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
@@ -25,89 +25,99 @@
   <body
     class="bg-primary-dark text-white dark:bg-primary-light dark:text-gray-900 min-h-screen transition-colors duration-300 font-sans"
   >
-    <div class="container mx-auto px-6 py-8">
-      <!-- Theme Toggle -->
-      <!-- Header -->
-      <header class="flex justify-between items-center p-4 relative">
-        <div class="flex items-center space-x-4">
-          <div
-            class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
-          >
-            <span class="text-xl font-bold">N</span>
-          </div>
-          <h1 class="text-4xl font-extrabold tracking-wider dark:text-gray-800">
-            NAS NEWS
-          </h1>
-        </div>
+  <div class="container mx-auto px-6 py-8">
+    <!-- Theme Toggle -->
+    <div class="absolute top-4 right-6">
+      <button
+        id="themeToggle"
+        class="bg-primary-dark dark:bg-indigo-300 hidden md:hidden text-white dark:text-gray-800 px-4 py-2 rounded-full hover:shadow-lg transition"
+      >
+      </button>
+    </div>
 
-        <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
-          <div class="w-6 h-1 bg-gray-600 mb-1"></div>
-          <div class="w-6 h-1 bg-gray-600 mb-1"></div>
-          <div class="w-6 h-1 bg-gray-600"></div>
-        </div>
-
-        <nav class="hidden md:block">
-          <ul class="flex space-x-6">
-            <li>
-              <a
-                href="#"
-                class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="pages/blog.html"
-                class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-                >Blogs</a
-              >
-            </li>
-            <li>
-              <a
-                href="pages/about-us.html"
-                class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="pages/contact.html"
-                class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <nav
-          id="mobileMenu"
-          class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 relative">
+      <div class="flex items-center space-x-4">
+        <div
+          class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
         >
-          <ul class="flex flex-col items-center py-4 space-y-4">
-            <li>
-              <a
-                href="pages/single-blog.html"
-                class="text-lg text-gray-700 hover:text-indigo-400"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="pages/single-blog.html"
-                class="text-lg text-gray-700 hover:text-indigo-400"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="pages/single-blog.html"
-                class="text-lg text-gray-700 hover:text-indigo-400"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
+          <span class="text-xl font-bold">S.T</span>
+        </div>
+        <h1 class="text-4xl font-extrabold tracking-wider dark:text-gray-800">
+          StarterTech
+        </h1>
+      </div>
+
+      <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
+        <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+        <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+        <div class="w-6 h-1 bg-gray-600"></div>
+      </div>
+
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6">
+          <li>
+            <a
+              href="#"
+              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="pages/blog.html"
+              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="pages/about-us.html"
+              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="pages/contact.html"
+              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <nav
+        id="mobileMenu"
+        class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
+      >
+        <ul class="flex flex-col items-center py-4 space-y-4">
+          <li>
+            <a
+              href="pages/single-blog.html"
+              class="text-lg text-gray-700 hover:text-indigo-400"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="pages/single-blog.html"
+              class="text-lg text-gray-700 hover:text-indigo-400"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="pages/single-blog.html"
+              class="text-lg text-gray-700 hover:text-indigo-400"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="h-16"></div>
 
       <section class="py-12 px-6">
         <!-- Main Content Grid -->
@@ -117,7 +127,7 @@
             class="lg:col-span-2 bg-secondary-dark dark:bg-secondary-light rounded-xl overflow-hidden shadow-2xl transform transition hover:scale-[1.02]"
           >
             <img
-              src="https://placehold.co/800x400"
+              src="assets/images/background.jpg"
               alt="Featured Story"
               class="w-full h-96 object-cover"
             />
@@ -125,20 +135,21 @@
               <h2
                 class="text-3xl font-bold mb-4 text-indigo-400 dark:text-indigo-600"
               >
-                Quantum Computing Revolution
+                StarterTech
               </h2>
               <p
                 class="text-lg text-gray-300 dark:text-gray-700 leading-relaxed mb-6"
               >
-                Breakthrough technologies are reshaping the computational
-                landscape, promising unprecedented processing capabilities that
-                could transform industries from healthcare to finance.
+              Website ini dibuat untuk membantu mahasiswa jurusan Teknik Informatika dan Komputer dengan menyediakan panduan praktis, 
+              tips belajar, serta sumber belajar berkualitas. Tujuannya adalah mendukung penguasaan keterampilan, memotivasi 
+              pengembangan diri, dan mempersiapkan mahasiswa menghadapi dunia kerja di bidang IT. Dengan konten yang aplikatif, 
+              website ini diharapkan menjadi sumber inspirasi dan panduan bagi mahasiswa untuk meraih kesuksesan.
               </p>
               <a
                 href="pages/single-blog.html"
                 class="inline-block bg-indigo-500 dark:bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition"
               >
-                Read Full Story
+                Get Started
               </a>
             </div>
           </div>
@@ -150,19 +161,19 @@
             class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-6 shadow-lg transform transition hover:scale-105"
           >
             <img
-              src="https://placehold.co/400x250"
+              src="assets/images/programing.jpeg"
               alt="News 1"
               class="w-full rounded-lg mb-4"
             />
             <h3
               class="text-xl font-semibold text-indigo-400 dark:text-indigo-600"
             >
-              Tech Innovations
+              Programing
             </h3>
             <p class="text-base text-gray-400 dark:text-gray-700">
-              Cutting-edge technological advancements
+              Cara Efektif Menguasai Pemrograman Sejak Semester Awal
             </p>
-            <a href="pages/single-blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
+            <a href="pages/blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
               Read More →
           </a>
           </div>
@@ -170,19 +181,19 @@
             class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-6 shadow-lg transform transition hover:scale-105"
           >
             <img
-              src="https://placehold.co/400x250"
+              src="assets/images/manajemen_waktu.jpeg"
               alt="News 2"
-              class="w-full rounded-lg mb-4"
+              class="w-[600px] h-[280px] rounded-lg mb-4"
             />
             <h3
               class="text-xl font-semibold text-indigo-400 dark:text-indigo-600"
             >
-              Space Exploration
+              Manajemen Waktu
             </h3>
             <p class="text-base text-gray-400 dark:text-gray-700">
-              Pushing the boundaries of human knowledge
+              Manajemen Waktu: Kunci Sukses di Dunia Teknik Informatika
             </p>
-            <a href="pages/single-blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
+            <a href="pages/blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
               Read More →
           </a>
           </div>
@@ -190,19 +201,19 @@
             class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-6 shadow-lg transform transition hover:scale-105"
           >
             <img
-              src="https://placehold.co/400x250"
+              src="assets/images/sumber_belajar.jpg"
               alt="News 3"
-              class="w-full rounded-lg mb-4"
+              class="w-[400px] h-[280px] rounded-lg mb-4"
             />
             <h3
               class="text-xl font-semibold text-indigo-400 dark:text-indigo-600"
             >
-              Global Science
+              5 Sumber Belajar
             </h3>
             <p class="text-base text-gray-400 dark:text-gray-700">
-              Breakthrough research and discoveries
+              5 Sumber Belajar Gratis untuk Mahasiswa Teknik Informatika
             </p>
-            <a href="pages/single-blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
+            <a href="pages/blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
               Read More →
           </a>
           </div>
@@ -219,8 +230,7 @@
           <u>Stay Updated</u>
         </h2>
         <p class="text-lg text-gray-400 dark:text-gray-600 mb-8">
-          Subscribe to get the latest news and updates delivered straight to
-          your inbox.
+          Masukan email kalian untuk mendapatkan berita terbaru dari StartedTech
         </p>
         <form class="max-w-lg mx-auto">
           <div class="flex items-center">
@@ -244,13 +254,13 @@
     <footer
       class="bg-gray-900 dark:bg-gray-800 py-12 text-white dark:text-gray-300"
     >
-      <div class="container mx-auto px-6 grid grid-cols-3 gap-6">
+      <div class="container  mx-auto px-6 grid grid-cols-3 gap-6">
         <!-- About -->
         <div>
-          <h3 class="text-xl font-bold mb-4">About Nexus News</h3>
+          <h3 class="text-xl font-bold mb-4">About StartedTech</h3>
           <p class="text-sm">
-            Nexus Global News delivers breaking stories and insightful analysis
-            from every corner of the world. Your go-to source for reliable news.
+            Website ini bertujuan membantu mahasiswa Teknik Informatika dengan tips, panduan, dan sumber belajar 
+            untuk mendukung pengembangan keterampilan dan persiapan karir di bidang IT.
           </p>
         </div>
         <!-- Quick Links -->
@@ -278,33 +288,24 @@
             </li>
           </ul>
         </div>
-        <!-- Social Media -->
         <div>
           <h3 class="text-xl font-bold mb-4">Follow Us</h3>
           <div class="sm:flex sm:space-x-4 space-y-4 sm:space-y-0">
-            <a
-              href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
-            >
-              <i class="fa fa-facebook-f text-xl"></i>
-            </a>
-            <a
-              href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
-            >
-              <i class="fa fa-twitter text-lg"></i>
-            </a>
-            <a
-              href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
-            >
-              <i class="fa fa-instagram text-lg"></i>
-            </a>
+            <div
+          class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+        >
+          <span class="text-xl font-bold">S.T</span>
+        </div>
+        <div class="mt-96">
+          <a href="pages/blog.html" class="hover:text-indigo-400 transition text-2xl"
+                  >StarterTech</a
+                >
+        </div>
           </div>
-        </div>        
+        </div>
       </div>
       <div class="text-center mt-8 text-sm text-gray-500">
-        © 2024 Nexus Global News. All rights reserved.
+        © 2024 StartedTech. All rights reserved.
       </div>
     </footer>
 
