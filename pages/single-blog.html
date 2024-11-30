@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>Quantum Computing Revolution</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .animate-marquee {
+        display: inline-block;
+        animation: marquee 10s linear infinite;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-primary-dark text-white dark:bg-primary-light dark:text-gray-900 min-h-screen transition-colors duration-300 font-sans"
+  >
+    <div class="container mx-auto px-6 py-8">
+      <!-- Theme Toggle -->
+      <div class="absolute top-4 right-6">
+        <button
+          id="themeToggle"
+          class="bg-indigo-500 dark:bg-indigo-300 text-white dark:text-gray-800 px-4 py-2 rounded-full hover:shadow-lg transition"
+        >
+          Toggle Theme
+        </button>
+      </div>
+
+      <!-- Header -->
+      <header class="flex justify-between items-center p-4 relative">
+        <div class="flex items-center space-x-4">
+          <div
+            class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+          >
+            <span class="text-xl font-bold">N</span>
+          </div>
+          <h1 class="text-4xl font-extrabold tracking-wider dark:text-gray-800">
+            NAS NEWS
+          </h1>
+        </div>
+
+        <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
+          <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+          <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+          <div class="w-6 h-1 bg-gray-600"></div>
+        </div>
+
+        <nav class="hidden md:block">
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="../index.html"
+                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a
+                href="about-us.html"
+                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <nav
+          id="mobileMenu"
+          class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
+        >
+          <ul class="flex flex-col items-center py-4 space-y-4">
+            <li>
+              <a
+                href="single-blog.html"
+                class="text-lg text-gray-700 hover:text-indigo-600"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="single-blog.html"
+                class="text-lg text-gray-700 hover:text-indigo-600"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="single-blog.html"
+                class="text-lg text-gray-700 hover:text-indigo-600"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div
+        class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-4 mb-8 flex items-center overflow-hidden shadow-lg my-8"
+      >
+        <span
+          class="bg-red-500 text-white px-4 py-2 rounded-full mr-6 text-sm font-bold animate-pulse"
+        >
+          BREAKING
+        </span>
+        <div class="flex-grow overflow-hidden relative">
+          <div class="animate-marquee whitespace-nowrap">
+            <a
+              href="single-blog.html"
+              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+            >
+              🌍 Global Climate Summit | 🤖 AI Breakthrough | 🚀 Space
+              Exploration Milestone
+            </a>
+          </div>
+        </div>
+        <a
+          href="single-blog.html"
+          class="ml-6 text-sm text-indigo-400 hover:text-indigo-600 transition"
+        >
+          Read More →
+        </a>
+      </div>
+
+      <div class="max-w-4xl mx-auto px-4 py-12 bg-inherit rounded-lg my-8">
+        <!-- Main Article -->
+        <article>
+          <img
+            src="/api/placeholder/1200/600"
+            alt="Quantum Computing"
+            class="w-full h-[500px] object-cover rounded-xl mb-8"
+          />
+
+          <h1
+            class="text-4xl md:text-5xl font-bold text-indigo-400 dark:text-indigo-600 mb-6"
+          >
+            Quantum Computing Revolution
+          </h1>
+
+          <div class="prose prose-invert text-lg space-y-6 mb-12">
+            <p>
+              Quantum computing represents a paradigm shift in computational
+              technology, promising unprecedented processing capabilities that
+              could transform multiple industries. Unlike classical computers
+              that use binary bits, quantum computers leverage quantum mechanics
+              principles, utilizing quantum bits or qubits.
+            </p>
+
+            <p>
+              These qubits can exist in multiple states simultaneously, enabling
+              quantum computers to perform complex calculations exponentially
+              faster than traditional systems. Potential applications span
+              cryptography, drug discovery, climate modeling, and artificial
+              intelligence.
+            </p>
+
+            <p>
+              Major tech companies and research institutions are investing
+              billions in quantum computing research, signaling a transformative
+              technological frontier that could redefine computational
+              possibilities in the coming decades.
+            </p>
+          </div>
+        </article>
+
+        <!-- More Blogs Section -->
+        <section class="mb-12">
+          <h2
+            class="text-3xl font-bold text-indigo-400 dark:text-indigo-600 border-b border-gray-700 pb-4 mb-8"
+          >
+            More Blogs
+          </h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div
+              class="bg-secondary-dark dark:bg-secondary-light rounded-xl overflow-hidden shadow-xl transform transition"
+            >
+              <img
+                src="/api/placeholder/400/250"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-5">
+                <h3
+                  class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
+                >
+                  AI Ethics Conference
+                </h3>
+                <p class="text-gray-400 mb-4">
+                  Global experts discuss technological boundaries
+                </p>
+                <a href="#" class="text-indigo-500 hover:text-indigo-600"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div
+              class="bg-secondary-dark dark:bg-secondary-light rounded-xl overflow-hidden shadow-xl transform transition"
+            >
+              <img
+                src="/api/placeholder/400/250"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-5">
+                <h3
+                  class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
+                >
+                  Climate Tech Innovation
+                </h3>
+                <p class="text-gray-400 mb-4">
+                  Sustainable solutions emerging globally
+                </p>
+                <a href="#" class="text-indigo-500 hover:text-indigo-600"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div
+              class="bg-secondary-dark dark:bg-secondary-light rounded-xl overflow-hidden shadow-xl transform transition"
+            >
+              <img
+                src="/api/placeholder/400/250"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-5">
+                <h3
+                  class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
+                >
+                  Space Exploration
+                </h3>
+                <p class="text-gray-400 mb-4">
+                  New missions beyond our solar system
+                </p>
+                <a href="#" class="text-indigo-500 hover:text-indigo-600"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- More News Section -->
+        <section>
+          <h2
+            class="text-3xl font-bold text-indigo-400 dark:text-indigo-600 border-b border-gray-700 pb-4 mb-8"
+          >
+            More News
+          </h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-5"
+            >
+              <img
+                src="/api/placeholder/400/250"
+                class="w-full rounded-lg mb-4"
+              />
+              <h3
+                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
+              >
+                Tech Innovations
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Cutting-edge technological advancements worldwide
+              </p>
+            </div>
+            <div
+              class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-5"
+            >
+              <img
+                src="/api/placeholder/400/250"
+                class="w-full rounded-lg mb-4"
+              />
+              <h3
+                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
+              >
+                Global Science
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Breakthrough research and discoveries
+              </p>
+            </div>
+            <div
+              class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-5"
+            >
+              <img
+                src="/api/placeholder/400/250"
+                class="w-full rounded-lg mb-4"
+              />
+              <h3
+                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
+              >
+                Mars Mission
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Latest updates on interplanetary exploration
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="bg-gray-900 dark:bg-gray-800 py-12 text-white dark:text-gray-300"
+    >
+      <div class="container mx-auto px-6 grid grid-cols-3 gap-6">
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">About Nexus News</h3>
+          <p class="text-sm">
+            Nexus Global News delivers breaking stories and insightful analysis
+            from every corner of the world. Your go-to source for reliable news.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="pages/about-us.html"
+                class="hover:text-indigo-400 transition"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="pages/blog.html" class="hover:text-indigo-400 transition"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/contact.html"
+                class="hover:text-indigo-400 transition"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+            <div class="sm:flex sm:space-x-4 space-y-4 sm:space-y-0">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
+              >
+                <i class="fa fa-facebook-f text-xl"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
+              >
+                <i class="fa fa-twitter text-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
+              >
+                <i class="fa fa-instagram text-lg"></i>
+              </a>
+            </div>
+          </div>   
+      </div>
+      <div class="text-center mt-8 text-sm text-gray-500">
+        © 2024 Nexus Global News. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+      const html = document.documentElement;
+
+      themeToggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          html.classList.contains("dark") ? "dark" : "light"
+        );
+      });
+
+      if (localStorage.getItem("theme") === "dark") {
+        html.classList.add("dark");
+      }
+
+      document
+        .getElementById("hamburgerMenu")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>

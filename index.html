@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus Global News</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+      }
+
+      .animate-marquee {
+        display: inline-block;
+        animation: marquee 10s linear infinite;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-primary-dark text-white dark:bg-primary-light dark:text-gray-900 min-h-screen transition-colors duration-300 font-sans"
+  >
+    <div class="container mx-auto px-6 py-8">
+      <!-- Theme Toggle -->
+      <div class="absolute top-4 right-6">
+        <button
+          id="themeToggle"
+          class="bg-indigo-500 dark:bg-indigo-300 text-white dark:text-gray-800 px-4 py-2 rounded-full hover:shadow-lg transition"
+        >
+          Toggle Theme
+        </button>
+      </div>
+
+      <!-- Header -->
+      <header class="flex justify-between items-center p-4 relative">
+        <div class="flex items-center space-x-4">
+          <div
+            class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+          >
+            <span class="text-xl font-bold">N</span>
+          </div>
+          <h1 class="text-4xl font-extrabold tracking-wider dark:text-gray-800">
+            NAS NEWS
+          </h1>
+        </div>
+
+        <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
+          <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+          <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+          <div class="w-6 h-1 bg-gray-600"></div>
+        </div>
+
+        <nav class="hidden md:block">
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="#"
+                class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/blog.html"
+                class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/about-us.html"
+                class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/contact.html"
+                class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <nav
+          id="mobileMenu"
+          class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
+        >
+          <ul class="flex flex-col items-center py-4 space-y-4">
+            <li>
+              <a
+                href="pages/single-blog.html"
+                class="text-lg text-gray-700 hover:text-indigo-400"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/single-blog.html"
+                class="text-lg text-gray-700 hover:text-indigo-400"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/single-blog.html"
+                class="text-lg text-gray-700 hover:text-indigo-400"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="py-12 px-6">
+        <!-- Breaking News -->
+        <div
+          class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-4 mb-8 flex items-center overflow-hidden shadow-lg"
+        >
+          <span
+            class="bg-red-500 text-white px-4 py-2 rounded-full mr-6 text-sm font-bold animate-pulse"
+          >
+            BREAKING
+          </span>
+          <div class="flex-grow overflow-hidden relative">
+            <div class="animate-marquee whitespace-nowrap">
+              <a
+                href="pages/single-blog.html"
+                class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+              >
+                🌍 Global Climate Summit | 🤖 AI Breakthrough | 🚀 Space
+                Exploration Milestone
+              </a>
+            </div>
+          </div>
+          <a
+            href="pages/single-blog.html"
+            class="ml-6 text-sm text-indigo-400 hover:text-indigo-600 transition"
+          >
+            Read More →
+          </a>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Featured Article -->
+          <div
+            class="lg:col-span-2 bg-secondary-dark dark:bg-secondary-light rounded-xl overflow-hidden shadow-2xl transform transition hover:scale-[1.02]"
+          >
+            <img
+              src="https://placehold.co/800x400"
+              alt="Featured Story"
+              class="w-full h-96 object-cover"
+            />
+            <div class="p-6">
+              <h2
+                class="text-3xl font-bold mb-4 text-indigo-400 dark:text-indigo-600"
+              >
+                Quantum Computing Revolution
+              </h2>
+              <p
+                class="text-lg text-gray-300 dark:text-gray-700 leading-relaxed mb-6"
+              >
+                Breakthrough technologies are reshaping the computational
+                landscape, promising unprecedented processing capabilities that
+                could transform industries from healthcare to finance.
+              </p>
+              <a
+                href="pages/single-blog.html"
+                class="inline-block bg-indigo-500 dark:bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition"
+              >
+                Read Full Story
+              </a>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div>
+            <h3
+              class="text-2xl font-semibold mb-6 border-b border-gray-700 dark:border-gray-300 pb-2 text-white dark:text-gray-800"
+            >
+              Latest Headlines
+            </h3>
+            <div class="space-y-4">
+              <div
+                class="bg-secondary-dark dark:bg-secondary-light rounded-lg p-4 shadow-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition"
+              >
+                <h4
+                  class="font-semibold text-xl text-indigo-400 dark:text-indigo-600"
+                >
+                  AI Ethics Conference
+                </h4>
+                <p class="text-base text-gray-400 dark:text-gray-700">
+                  Global experts discuss technological boundaries
+                </p>
+                <a
+                  href="pages/single-blog.html"
+                  class="text-sm text-indigo-400 hover:text-indigo-600 transition"
+                >
+                  Read More →
+                </a>
+              </div>
+              <div
+                class="bg-secondary-dark dark:bg-secondary-light rounded-lg p-4 shadow-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition"
+              >
+                <h4
+                  class="font-semibold text-xl text-indigo-400 dark:text-indigo-600"
+                >
+                  Mars Mission Update
+                </h4>
+                <p class="text-base text-gray-400 dark:text-gray-700">
+                  New rover deployment planned
+                </p>
+                <a
+                  href="pages/single-blog.html"
+                  class="text-sm text-indigo-400 hover:text-indigo-600 transition"
+                >
+                  Read More →
+                </a>
+              </div>
+              <div
+                class="bg-secondary-dark dark:bg-secondary-light rounded-lg p-4 shadow-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition"
+              >
+                <h4
+                  class="font-semibold text-xl text-indigo-400 dark:text-indigo-600"
+                >
+                  Climate Tech Innovation
+                </h4>
+                <p class="text-base text-gray-400 dark:text-gray-700">
+                  Sustainable solutions emerging
+                </p>
+                <a
+                  href="pages/single-blog.html"
+                  class="text-sm text-indigo-400 hover:text-indigo-600 transition"
+                >
+                  Read More →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          <div
+            class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-6 shadow-lg transform transition hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/400x250"
+              alt="News 1"
+              class="w-full rounded-lg mb-4"
+            />
+            <h3
+              class="text-xl font-semibold text-indigo-400 dark:text-indigo-600"
+            >
+              Tech Innovations
+            </h3>
+            <p class="text-base text-gray-400 dark:text-gray-700">
+              Cutting-edge technological advancements
+            </p>
+            <a href="pages/single-blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
+              Read More →
+          </a>
+          </div>
+          <div
+            class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-6 shadow-lg transform transition hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/400x250"
+              alt="News 2"
+              class="w-full rounded-lg mb-4"
+            />
+            <h3
+              class="text-xl font-semibold text-indigo-400 dark:text-indigo-600"
+            >
+              Space Exploration
+            </h3>
+            <p class="text-base text-gray-400 dark:text-gray-700">
+              Pushing the boundaries of human knowledge
+            </p>
+            <a href="pages/single-blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
+              Read More →
+          </a>
+          </div>
+          <div
+            class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-6 shadow-lg transform transition hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/400x250"
+              alt="News 3"
+              class="w-full rounded-lg mb-4"
+            />
+            <h3
+              class="text-xl font-semibold text-indigo-400 dark:text-indigo-600"
+            >
+              Global Science
+            </h3>
+            <p class="text-base text-gray-400 dark:text-gray-700">
+              Breakthrough research and discoveries
+            </p>
+            <a href="pages/single-blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
+              Read More →
+          </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Reporter Style Section -->
+    <section class="bg-gray-900 dark:bg-gray-100 py-12">
+      <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Video -->
+        <div
+          class="flex justify-center items-center bg-secondary-dark dark:bg-secondary-light rounded-lg overflow-hidden"
+        >
+          <video class="w-full h-auto rounded-lg" controls>
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Text -->
+        <div class="flex flex-col justify-center text-center lg:text-left">
+          <h2
+            class="text-3xl font-extrabold text-gray-100 dark:text-gray-800 mb-4"
+          >
+            <u>Breaking News Report</u>
+          </h2>
+          <p class="text-lg text-gray-400 dark:text-gray-600 mb-6">
+            Watch as we break down the latest developments in the global tech
+            landscape and explore how these events will shape the future of
+            innovation.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-indigo-500 dark:bg-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-700 text-white dark:text-white px-6 py-3 rounded-lg font-semibold transition"
+          >
+            Watch Full Report
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-700 dark:bg-primary-light py-12">
+      <div class="container mx-auto px-6 text-center">
+        <h2
+          class="text-3xl font-extrabold text-gray-100 dark:text-gray-800 mb-6"
+        >
+          <u>Our Blogs</u>
+        </h2>
+        <p class="text-lg text-gray-400 dark:text-gray-600 mb-8">
+          Discover the most discussed topics and dive deeper into the stories
+          that matter.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div
+            class="bg-secondary-dark dark:bg-secondary-light rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/400x250"
+              alt="Global Politics"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
+              >
+                Global Politics
+              </h3>
+              <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
+                Updates on geopolitical developments.
+              </p>
+              <a
+                href="pages/single-blog.html"
+                class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition"
+              >
+                Read Blog
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-secondary-dark dark:bg-secondary-light rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/400x250"
+              alt="Technology Trends"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
+              >
+                Technology Trends
+              </h3>
+              <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
+                Insights into emerging tech innovations.
+              </p>
+              <a
+                href="pages/single-blog.html"
+                class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition"
+              >
+                Read Blog
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-secondary-dark dark:bg-secondary-light rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/400x250"
+              alt="Climate Change"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
+              >
+                Climate Change
+              </h3>
+              <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
+                Environmental research and updates.
+              </p>
+              <a
+                href="pages/single-blog.html"
+                class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition"
+              >
+                Read Blog
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-secondary-dark dark:bg-secondary-light rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/400x250"
+              alt="Health & Wellness"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
+              >
+                Health & Wellness
+              </h3>
+              <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
+                Latest medical and wellness insights.
+              </p>
+              <a
+                href="pages/single-blog.html"
+                class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition"
+              >
+                Read Blog
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a
+            href="pages/blog.html"
+            class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+          >
+            View More Blogs
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stay Updated Section -->
+    <section class="bg-gray-800 dark:bg-gray-200 py-12">
+      <div class="container mx-auto px-6 text-center">
+        <h2
+          class="text-3xl font-extrabold text-gray-100 dark:text-gray-800 mb-6"
+        >
+          <u>Stay Updated</u>
+        </h2>
+        <p class="text-lg text-gray-400 dark:text-gray-600 mb-8">
+          Subscribe to get the latest news and updates delivered straight to
+          your inbox.
+        </p>
+        <form class="max-w-lg mx-auto">
+          <div class="flex items-center">
+            <input
+              type="email"
+              class="w-full px-4 py-2 rounded-l-lg bg-gray-800 text-gray-100 dark:bg-white dark:text-gray-800 border border-gray-700 dark:border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+              placeholder="Enter your email"
+            />
+            <button
+              type="submit"
+              class="bg-indigo-500 dark:bg-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-700 text-white dark:text-white px-6 py-2 rounded-r-lg font-semibold transition"
+            >
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gray-900 dark:bg-gray-800 py-12 text-white dark:text-gray-300"
+    >
+      <div class="container mx-auto px-6 grid grid-cols-3 gap-6">
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">About Nexus News</h3>
+          <p class="text-sm">
+            Nexus Global News delivers breaking stories and insightful analysis
+            from every corner of the world. Your go-to source for reliable news.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="pages/about-us.html"
+                class="hover:text-indigo-400 transition"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="pages/blog.html" class="hover:text-indigo-400 transition"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/contact.html"
+                class="hover:text-indigo-400 transition"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+          <div class="sm:flex sm:space-x-4 space-y-4 sm:space-y-0">
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
+            >
+              <i class="fa fa-facebook-f text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
+            >
+              <i class="fa fa-twitter text-lg"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
+            >
+              <i class="fa fa-instagram text-lg"></i>
+            </a>
+          </div>
+        </div>        
+      </div>
+      <div class="text-center mt-8 text-sm text-gray-500">
+        © 2024 Nexus Global News. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+      const html = document.documentElement;
+
+      themeToggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          html.classList.contains("dark") ? "dark" : "light"
+        );
+      });
+
+      if (localStorage.getItem("theme") === "dark") {
+        html.classList.add("dark");
+      }
+
+      document
+        .getElementById("hamburgerMenu")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>

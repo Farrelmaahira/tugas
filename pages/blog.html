@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .animate-marquee {
+        display: inline-block;
+        animation: marquee 10s linear infinite;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-primary-dark text-white dark:bg-primary-light dark:text-gray-900 min-h-screen transition-colors duration-300 font-sans"
+  >
+    <div class="container mx-auto px-6 py-8">
+      <!-- Theme Toggle -->
+      <div class="absolute top-4 right-6">
+        <button
+          id="themeToggle"
+          class="bg-indigo-500 dark:bg-indigo-300 text-white dark:text-gray-800 px-4 py-2 rounded-full hover:shadow-lg transition"
+        >
+          Toggle Theme
+        </button>
+      </div>
+
+      <!-- Header -->
+      <header class="flex justify-between items-center p-4 relative">
+        <div class="flex items-center space-x-4">
+          <div
+            class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+          >
+            <span class="text-xl font-bold">N</span>
+          </div>
+          <h1 class="text-4xl font-extrabold tracking-wider dark:text-gray-800">
+            NAS NEWS
+          </h1>
+        </div>
+
+        <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
+          <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+          <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+          <div class="w-6 h-1 bg-gray-600"></div>
+        </div>
+
+        <nav class="hidden md:block">
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="../index.html"
+                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a
+                href="about-us.html"
+                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-lg dark:text-gray-700 hover:text-indigo-600 transition"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <nav
+          id="mobileMenu"
+          class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
+        >
+          <ul class="flex flex-col items-center py-4 space-y-4">
+            <li>
+              <a
+                href="single-blog.html"
+                class="text-lg text-gray-700 hover:text-indigo-600"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="single-blog.html"
+                class="text-lg text-gray-700 hover:text-indigo-600"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="single-blog.html"
+                class="text-lg text-gray-700 hover:text-indigo-600"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div
+        class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-4 mb-8 flex items-center overflow-hidden shadow-lg my-8"
+      >
+        <span
+          class="bg-red-500 text-white px-4 py-2 rounded-full mr-6 text-sm font-bold animate-pulse"
+        >
+          BREAKING
+        </span>
+        <div class="flex-grow overflow-hidden relative">
+          <div class="animate-marquee whitespace-nowrap">
+            <a
+              href="single-blog.html"
+              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
+            >
+              🌍 Global Climate Summit | 🤖 AI Breakthrough | 🚀 Space
+              Exploration Milestone
+            </a>
+          </div>
+        </div>
+        <a
+          href="single-blog.html"
+          class="ml-6 text-sm text-indigo-400 hover:text-indigo-600 transition"
+        >
+          Read More →
+        </a>
+      </div>
+
+      <section class="bg-gray-800 dark:bg-primary-light py-4">
+        <div class="container mx-auto px-6">
+          <!-- Section Header -->
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-white dark:text-gray-900 mb-4">
+              <u>Our Blogs</u>
+            </h2>
+            <p class="text-lg text-gray-400 dark:text-gray-600">
+              Discover the most discussed topics and dive deeper into the stories that matter.
+            </p>
+          </div>
+          <!-- Masonry Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Blog Card -->
+            <div class="bg-gray-900 dark:bg-secondary-light rounded-lg shadow-md overflow-hidden transform transition hover:scale-105 hover:shadow-lg">
+              <img src="https://placehold.co/400x300" alt="Global Politics" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2">Global Politics</h3>
+                <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
+                  Updates on geopolitical developments.
+                </p>
+                <a href="single-blog.html" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition">
+                  Read Blog
+                </a>
+              </div>
+            </div>
+            <!-- Blog Card -->
+            <div class="bg-gray-900 dark:bg-secondary-light rounded-lg shadow-md overflow-hidden transform transition hover:scale-105 hover:shadow-lg">
+              <img src="https://placehold.co/400x300" alt="Technology Trends" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2">Technology Trends</h3>
+                <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
+                  Insights into emerging tech innovations.
+                </p>
+                <a href="single-blog.html" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition">
+                  Read Blog
+                </a>
+              </div>
+            </div>
+            <!-- Blog Card -->
+            <div class="bg-gray-900 dark:bg-secondary-light rounded-lg shadow-md overflow-hidden transform transition hover:scale-105 hover:shadow-lg">
+              <img src="https://placehold.co/400x300" alt="Climate Change" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2">Climate Change</h3>
+                <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
+                  Environmental research and updates.
+                </p>
+                <a href="single-blog.html" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition">
+                  Read Blog
+                </a>
+              </div>
+            </div>
+            <!-- Blog Card -->
+            <div class="bg-gray-900 dark:bg-secondary-light rounded-lg shadow-md overflow-hidden transform transition hover:scale-105 hover:shadow-lg">
+              <img src="https://placehold.co/400x300" alt="Health & Wellness" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2">Health & Wellness</h3>
+                <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
+                  Latest medical and wellness insights.
+                </p>
+                <a href="single-blog.html" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition">
+                  Read Blog
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- View More Button -->
+          <div class="text-center mt-12">
+            <a href="blog.html" class="inline-block bg-indigo-600 text-white text-lg px-6 py-3 rounded-lg hover:bg-indigo-700 transition">
+              View More Blogs
+            </a>
+          </div>
+        </div>
+      </section>      
+
+    </div>
+    <!-- Footer -->
+    <footer
+      class="bg-gray-900 dark:bg-gray-800 py-12 text-white dark:text-gray-300"
+    >
+      <div class="container mx-auto px-6 grid grid-cols-3 gap-6">
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">About Nexus News</h3>
+          <p class="text-sm">
+            Nexus Global News delivers breaking stories and insightful analysis
+            from every corner of the world. Your go-to source for reliable news.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="about-us.html"
+                class="hover:text-indigo-400 transition"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="blog.html" class="hover:text-indigo-400 transition"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="hover:text-indigo-400 transition"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+            <div class="sm:flex sm:space-x-4 space-y-4 sm:space-y-0">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
+              >
+                <i class="fa fa-facebook-f text-xl"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
+              >
+                <i class="fa fa-twitter text-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
+              >
+                <i class="fa fa-instagram text-lg"></i>
+              </a>
+            </div>
+          </div>   
+      </div>
+      <div class="text-center mt-8 text-sm text-gray-500">
+        © 2024 Nexus Global News. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+      const html = document.documentElement;
+
+      themeToggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          html.classList.contains("dark") ? "dark" : "light"
+        );
+      });
+
+      if (localStorage.getItem("theme") === "dark") {
+        html.classList.add("dark");
+      }
+
+      document
+        .getElementById("hamburgerMenu")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
