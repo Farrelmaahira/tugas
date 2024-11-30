@@ -19,21 +19,6 @@
         transform: translateY(-10px) scale(1.02);
         box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
       }
-
-      .animate-marquee {
-        display: inline-block;
-        animation: marquee 10s linear infinite;
-      }
-
-      @keyframes marquee {
-        0% {
-          transform: translateX(100%);
-        }
-
-        100% {
-          transform: translateX(-100%);
-        }
-      }
     </style>
   </head>
 
@@ -42,15 +27,6 @@
   >
     <div class="container mx-auto px-6 py-8">
       <!-- Theme Toggle -->
-      <div class="absolute top-4 right-6">
-        <button
-          id="themeToggle"
-          class="bg-indigo-500 dark:bg-indigo-300 text-white dark:text-gray-800 px-4 py-2 rounded-full hover:shadow-lg transition"
-        >
-          Toggle Theme
-        </button>
-      </div>
-
       <!-- Header -->
       <header class="flex justify-between items-center p-4 relative">
         <div class="flex items-center space-x-4">
@@ -134,36 +110,8 @@
       </header>
 
       <section class="py-12 px-6">
-        <!-- Breaking News -->
-        <div
-          class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-4 mb-8 flex items-center overflow-hidden shadow-lg"
-        >
-          <span
-            class="bg-red-500 text-white px-4 py-2 rounded-full mr-6 text-sm font-bold animate-pulse"
-          >
-            BREAKING
-          </span>
-          <div class="flex-grow overflow-hidden relative">
-            <div class="animate-marquee whitespace-nowrap">
-              <a
-                href="pages/single-blog.html"
-                class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >
-                🌍 Global Climate Summit | 🤖 AI Breakthrough | 🚀 Space
-                Exploration Milestone
-              </a>
-            </div>
-          </div>
-          <a
-            href="pages/single-blog.html"
-            class="ml-6 text-sm text-indigo-400 hover:text-indigo-600 transition"
-          >
-            Read More →
-          </a>
-        </div>
-
         <!-- Main Content Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="">
           <!-- Featured Article -->
           <div
             class="lg:col-span-2 bg-secondary-dark dark:bg-secondary-light rounded-xl overflow-hidden shadow-2xl transform transition hover:scale-[1.02]"
@@ -192,71 +140,6 @@
               >
                 Read Full Story
               </a>
-            </div>
-          </div>
-
-          <!-- Sidebar -->
-          <div>
-            <h3
-              class="text-2xl font-semibold mb-6 border-b border-gray-700 dark:border-gray-300 pb-2 text-white dark:text-gray-800"
-            >
-              Latest Headlines
-            </h3>
-            <div class="space-y-4">
-              <div
-                class="bg-secondary-dark dark:bg-secondary-light rounded-lg p-4 shadow-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition"
-              >
-                <h4
-                  class="font-semibold text-xl text-indigo-400 dark:text-indigo-600"
-                >
-                  AI Ethics Conference
-                </h4>
-                <p class="text-base text-gray-400 dark:text-gray-700">
-                  Global experts discuss technological boundaries
-                </p>
-                <a
-                  href="pages/single-blog.html"
-                  class="text-sm text-indigo-400 hover:text-indigo-600 transition"
-                >
-                  Read More →
-                </a>
-              </div>
-              <div
-                class="bg-secondary-dark dark:bg-secondary-light rounded-lg p-4 shadow-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition"
-              >
-                <h4
-                  class="font-semibold text-xl text-indigo-400 dark:text-indigo-600"
-                >
-                  Mars Mission Update
-                </h4>
-                <p class="text-base text-gray-400 dark:text-gray-700">
-                  New rover deployment planned
-                </p>
-                <a
-                  href="pages/single-blog.html"
-                  class="text-sm text-indigo-400 hover:text-indigo-600 transition"
-                >
-                  Read More →
-                </a>
-              </div>
-              <div
-                class="bg-secondary-dark dark:bg-secondary-light rounded-lg p-4 shadow-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition"
-              >
-                <h4
-                  class="font-semibold text-xl text-indigo-400 dark:text-indigo-600"
-                >
-                  Climate Tech Innovation
-                </h4>
-                <p class="text-base text-gray-400 dark:text-gray-700">
-                  Sustainable solutions emerging
-                </p>
-                <a
-                  href="pages/single-blog.html"
-                  class="text-sm text-indigo-400 hover:text-indigo-600 transition"
-                >
-                  Read More →
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -326,175 +209,9 @@
         </div>
       </section>
     </div>
-    <!-- Reporter Style Section -->
-    <section class="bg-gray-900 dark:bg-gray-100 py-12">
-      <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <!-- Video -->
-        <div
-          class="flex justify-center items-center bg-secondary-dark dark:bg-secondary-light rounded-lg overflow-hidden"
-        >
-          <video class="w-full h-auto rounded-lg" controls>
-            <source
-              src="https://www.w3schools.com/html/mov_bbb.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        <!-- Text -->
-        <div class="flex flex-col justify-center text-center lg:text-left">
-          <h2
-            class="text-3xl font-extrabold text-gray-100 dark:text-gray-800 mb-4"
-          >
-            <u>Breaking News Report</u>
-          </h2>
-          <p class="text-lg text-gray-400 dark:text-gray-600 mb-6">
-            Watch as we break down the latest developments in the global tech
-            landscape and explore how these events will shape the future of
-            innovation.
-          </p>
-          <a
-            href="#"
-            class="inline-block bg-indigo-500 dark:bg-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-700 text-white dark:text-white px-6 py-3 rounded-lg font-semibold transition"
-          >
-            Watch Full Report
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-gray-700 dark:bg-primary-light py-12">
-      <div class="container mx-auto px-6 text-center">
-        <h2
-          class="text-3xl font-extrabold text-gray-100 dark:text-gray-800 mb-6"
-        >
-          <u>Our Blogs</u>
-        </h2>
-        <p class="text-lg text-gray-400 dark:text-gray-600 mb-8">
-          Discover the most discussed topics and dive deeper into the stories
-          that matter.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <div
-            class="bg-secondary-dark dark:bg-secondary-light rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105"
-          >
-            <img
-              src="https://placehold.co/400x250"
-              alt="Global Politics"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
-              >
-                Global Politics
-              </h3>
-              <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
-                Updates on geopolitical developments.
-              </p>
-              <a
-                href="pages/single-blog.html"
-                class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition"
-              >
-                Read Blog
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="bg-secondary-dark dark:bg-secondary-light rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105"
-          >
-            <img
-              src="https://placehold.co/400x250"
-              alt="Technology Trends"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
-              >
-                Technology Trends
-              </h3>
-              <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
-                Insights into emerging tech innovations.
-              </p>
-              <a
-                href="pages/single-blog.html"
-                class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition"
-              >
-                Read Blog
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="bg-secondary-dark dark:bg-secondary-light rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105"
-          >
-            <img
-              src="https://placehold.co/400x250"
-              alt="Climate Change"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
-              >
-                Climate Change
-              </h3>
-              <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
-                Environmental research and updates.
-              </p>
-              <a
-                href="pages/single-blog.html"
-                class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition"
-              >
-                Read Blog
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="bg-secondary-dark dark:bg-secondary-light rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105"
-          >
-            <img
-              src="https://placehold.co/400x250"
-              alt="Health & Wellness"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3
-                class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2"
-              >
-                Health & Wellness
-              </h3>
-              <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
-                Latest medical and wellness insights.
-              </p>
-              <a
-                href="pages/single-blog.html"
-                class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition"
-              >
-                Read Blog
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center">
-          <a
-            href="pages/blog.html"
-            class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
-          >
-            View More Blogs
-          </a>
-        </div>
-      </div>
-    </section>
 
     <!-- Stay Updated Section -->
-    <section class="bg-gray-800 dark:bg-gray-200 py-12">
+    <section class="bg-gray-700 dark:bg-gray-200 py-12">
       <div class="container mx-auto px-6 text-center">
         <h2
           class="text-3xl font-extrabold text-gray-100 dark:text-gray-800 mb-6"

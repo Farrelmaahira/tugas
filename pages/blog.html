@@ -10,22 +10,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      .animate-marquee {
-        display: inline-block;
-        animation: marquee 10s linear infinite;
-      }
-
-      @keyframes marquee {
-        0% {
-          transform: translateX(100%);
-        }
-
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-    </style>
   </head>
 
   <body
@@ -123,32 +107,6 @@
           </ul>
         </nav>
       </header>
-      <div
-        class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-4 mb-8 flex items-center overflow-hidden shadow-lg my-8"
-      >
-        <span
-          class="bg-red-500 text-white px-4 py-2 rounded-full mr-6 text-sm font-bold animate-pulse"
-        >
-          BREAKING
-        </span>
-        <div class="flex-grow overflow-hidden relative">
-          <div class="animate-marquee whitespace-nowrap">
-            <a
-              href="single-blog.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-            >
-              🌍 Global Climate Summit | 🤖 AI Breakthrough | 🚀 Space
-              Exploration Milestone
-            </a>
-          </div>
-        </div>
-        <a
-          href="single-blog.html"
-          class="ml-6 text-sm text-indigo-400 hover:text-indigo-600 transition"
-        >
-          Read More →
-        </a>
-      </div>
 
       <section class="bg-gray-800 dark:bg-primary-light py-4">
         <div class="container mx-auto px-6">
@@ -162,46 +120,7 @@
             </p>
           </div>
           <!-- Masonry Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            <!-- Blog Card -->
-            <div class="bg-gray-900 dark:bg-secondary-light rounded-lg shadow-md overflow-hidden transform transition hover:scale-105 hover:shadow-lg">
-              <img src="https://placehold.co/400x300" alt="Global Politics" class="w-full h-48 object-cover">
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2">Global Politics</h3>
-                <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
-                  Updates on geopolitical developments.
-                </p>
-                <a href="single-blog.html" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition">
-                  Read Blog
-                </a>
-              </div>
-            </div>
-            <!-- Blog Card -->
-            <div class="bg-gray-900 dark:bg-secondary-light rounded-lg shadow-md overflow-hidden transform transition hover:scale-105 hover:shadow-lg">
-              <img src="https://placehold.co/400x300" alt="Technology Trends" class="w-full h-48 object-cover">
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2">Technology Trends</h3>
-                <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
-                  Insights into emerging tech innovations.
-                </p>
-                <a href="single-blog.html" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition">
-                  Read Blog
-                </a>
-              </div>
-            </div>
-            <!-- Blog Card -->
-            <div class="bg-gray-900 dark:bg-secondary-light rounded-lg shadow-md overflow-hidden transform transition hover:scale-105 hover:shadow-lg">
-              <img src="https://placehold.co/400x300" alt="Climate Change" class="w-full h-48 object-cover">
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-indigo-400 dark:text-indigo-600 mb-2">Climate Change</h3>
-                <p class="text-gray-400 dark:text-gray-600 text-sm mb-4">
-                  Environmental research and updates.
-                </p>
-                <a href="single-blog.html" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition">
-                  Read Blog
-                </a>
-              </div>
-            </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="blog-section">
             <!-- Blog Card -->
             <div class="bg-gray-900 dark:bg-secondary-light rounded-lg shadow-md overflow-hidden transform transition hover:scale-105 hover:shadow-lg">
               <img src="https://placehold.co/400x300" alt="Health & Wellness" class="w-full h-48 object-cover">
@@ -293,6 +212,7 @@
         © 2024 Nexus Global News. All rights reserved.
       </div>
     </footer>
+    <script src="./../assets/js/blog.js"></script>
     <script>
       const themeToggle = document.getElementById("themeToggle");
       const html = document.documentElement;

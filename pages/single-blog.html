@@ -10,22 +10,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      .animate-marquee {
-        display: inline-block;
-        animation: marquee 10s linear infinite;
-      }
-
-      @keyframes marquee {
-        0% {
-          transform: translateX(100%);
-        }
-
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-    </style>
   </head>
 
   <body
@@ -124,74 +108,11 @@
         </nav>
       </header>
 
-      <div
-        class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-4 mb-8 flex items-center overflow-hidden shadow-lg my-8"
-      >
-        <span
-          class="bg-red-500 text-white px-4 py-2 rounded-full mr-6 text-sm font-bold animate-pulse"
-        >
-          BREAKING
-        </span>
-        <div class="flex-grow overflow-hidden relative">
-          <div class="animate-marquee whitespace-nowrap">
-            <a
-              href="single-blog.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-            >
-              🌍 Global Climate Summit | 🤖 AI Breakthrough | 🚀 Space
-              Exploration Milestone
-            </a>
-          </div>
-        </div>
-        <a
-          href="single-blog.html"
-          class="ml-6 text-sm text-indigo-400 hover:text-indigo-600 transition"
-        >
-          Read More →
-        </a>
-      </div>
-
       <div class="max-w-4xl mx-auto px-4 py-12 bg-inherit rounded-lg my-8">
         <!-- Main Article -->
-        <article>
-          <img
-            src="/api/placeholder/1200/600"
-            alt="Quantum Computing"
-            class="w-full h-[500px] object-cover rounded-xl mb-8"
-          />
+         <div id="article-section">
 
-          <h1
-            class="text-4xl md:text-5xl font-bold text-indigo-400 dark:text-indigo-600 mb-6"
-          >
-            Quantum Computing Revolution
-          </h1>
-
-          <div class="prose prose-invert text-lg space-y-6 mb-12">
-            <p>
-              Quantum computing represents a paradigm shift in computational
-              technology, promising unprecedented processing capabilities that
-              could transform multiple industries. Unlike classical computers
-              that use binary bits, quantum computers leverage quantum mechanics
-              principles, utilizing quantum bits or qubits.
-            </p>
-
-            <p>
-              These qubits can exist in multiple states simultaneously, enabling
-              quantum computers to perform complex calculations exponentially
-              faster than traditional systems. Potential applications span
-              cryptography, drug discovery, climate modeling, and artificial
-              intelligence.
-            </p>
-
-            <p>
-              Major tech companies and research institutions are investing
-              billions in quantum computing research, signaling a transformative
-              technological frontier that could redefine computational
-              possibilities in the coming decades.
-            </p>
-          </div>
-        </article>
-
+         </div>
         <!-- More Blogs Section -->
         <section class="mb-12">
           <h2
@@ -393,6 +314,7 @@
         © 2024 Nexus Global News. All rights reserved.
       </div>
     </footer>
+    <script src="./../assets/js/single-blog.js"></script>
     <script>
       const themeToggle = document.getElementById("themeToggle");
       const html = document.documentElement;
