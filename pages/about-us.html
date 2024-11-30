@@ -10,128 +10,104 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      .animate-marquee {
-        display: inline-block;
-        animation: marquee 10s linear infinite;
-      }
-
-      @keyframes marquee {
-        0% {
-          transform: translateX(100%);
-        }
-
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-    </style>
   </head>
 
   <body
     class="bg-primary-dark text-white dark:bg-primary-light dark:text-gray-900 min-h-screen transition-colors duration-300 font-sans"
   >
   <div class="container mx-auto px-6 py-8">
-    <!-- Theme Toggle -->
-    <div class="absolute top-4 right-6">
-      <button
-        id="themeToggle"
-        class="bg-primary-dark dark:bg-indigo-300 text-white dark:text-gray-800 md:hidden hidden px-4 py-2 rounded-full hover:shadow-lg transition"
-      >
-      </button>
-    </div>
-
-    <!-- Header -->
     <header class="flex justify-between items-center p-4 relative">
-      <div class="flex items-center space-x-4">
-        <div
-          class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+  <!-- Logo dan Nama -->
+  <div class="flex items-center space-x-4">
+    <div
+      class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+    >
+      <span class="text-xl font-bold text-white">S.T</span>
+    </div>
+    <h1 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-gray-white dark:text-gray-100">
+      StarterTech
+    </h1>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
+    <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+    <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+    <div class="w-6 h-1 bg-gray-600"></div>
+  </div>
+
+  <!-- Desktop Navigation -->
+  <nav class="hidden md:block">
+    <ul class="flex space-x-6">
+      <li>
+        <a
+          href="../index.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >Home</a
         >
-          <span class="text-xl font-bold">S.T</span>
-        </div>
-        <h1 class="text-4xl font-extrabold tracking-wider dark:text-gray-800">
-          StarterTech
-        </h1>
-      </div>
+      </li>
+      <li>
+        <a
+          href="blog.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >Blogs</a
+        >
+      </li>
+      <li>
+        <a
+          href="about-us.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          href="contact.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >Contact Us</a
+        >
+      </li>
+    </ul>
+  </nav>
 
-      <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
-        <div class="w-6 h-1 bg-gray-600 mb-1"></div>
-        <div class="w-6 h-1 bg-gray-600 mb-1"></div>
-        <div class="w-6 h-1 bg-gray-600"></div>
-      </div>
-
-      <nav class="hidden md:block">
-        <ul class="flex space-x-6">
-          <li>
-            <a
-              href="../index.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="blog.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >Blogs</a
-            >
-          </li>
-          <li>
-            <a
-              href="about-us.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <nav
-        id="mobileMenu"
-        class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
-      >
-        <ul class="flex flex-col items-center py-4 space-y-4">
-          <li>
-            <a
-              href="../index.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="blog.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              href="about-us.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <!-- Mobile Navigation -->
+  <nav
+    id="mobileMenu"
+    class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
+  >
+    <ul class="flex flex-col items-center py-4 space-y-4">
+      <li>
+        <a
+          href="../index.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="blog.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >Blogs</a
+        >
+      </li>
+      <li>
+        <a
+          href="about-us.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          href="contact.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >Contact Us</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
     
-    <div class="h-16"></div>
-
     <section class="bg-gray-700 dark:bg-primary-light py-12">
       <div class="container mx-auto px-6">
         <div class="text-center mb-12">
@@ -143,84 +119,69 @@
         <!-- Masonry Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           <!-- Card 1: Vision -->
-          <div class="bg-indigo-500 dark:bg-indigo-400 p-6 rounded-xl shadow-lg flex flex-col">
-            <div class="flex items-center mb-4">
-              <img 
-                src="../assets/images/avatar.jpg" 
-                alt="Vision Icon" 
-                class="w-16 h-16 rounded-full mr-4 object-cover"
-              />
-              <h3 class="text-2xl font-bold text-white dark:text-gray-900">Our Vision</h3>
+           <a href="https://www.linkedin.com/in/humayra-hajara-61370233a ">
+            <div class="bg-indigo-500 dark:bg-indigo-400 p-6 rounded-xl shadow-lg flex flex-col">
+              <div class="flex items-center mb-4">
+                <img 
+                  src="./../assets/images/profile/humayra.png" 
+                  alt="Vision Icon" 
+                  class="w-16 h-16 rounded-full mr-4 object-cover"
+                />
+                <h3 class="text-2xl font-bold text-white dark:text-gray-900">Humayra Risma Hajara (TMD - 1C)</h3>
+              </div>
+              <p class="text-gray-200 dark:text-gray-800 flex-grow">
+                Halo! salam kenal, Saya Humayra Risma Hajara. Seorang mahasiwa tahun pertama di program studi TMD jurusan TIK PNJ. Keindahan suatu karya adalah satu hal yang saya senangi. Karenanya, saya memilih program studi teknik multimedia digital sebagai langkah awal karir saya.
+              </p>
             </div>
-            <p class="text-gray-200 dark:text-gray-800 flex-grow">
-              We dream of a world where information empowers communities to make 
-              better decisions, fostering unity and progress.
-            </p>
-          </div>
+           </a>
 
           <!-- Card 2: Mission -->
-          <div class="bg-gray-800 dark:bg-gray-300 p-6 rounded-xl shadow-lg flex flex-col">
-            <div class="flex items-center mb-4">
-              <img 
-                src="../assets/images/avatar.jpg" 
-                alt="Mission Icon" 
-                class="w-16 h-16 rounded-full mr-4 object-cover"
-              />
-              <h3 class="text-2xl font-bold text-white dark:text-gray-900">Our Mission</h3>
+           <a href="https://www.linkedin.com/in/muhammad-iqbal-0661082b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <div class="bg-gray-800 dark:bg-gray-300 p-6 rounded-xl shadow-lg flex flex-col">
+              <div class="flex items-center mb-4">
+                <img 
+                  src="./../assets/images/profile/iqbal.jpg" 
+                  alt="Mission Icon" 
+                  class="w-16 h-16 rounded-full mr-4 object-cover"
+                />
+                <h3 class="text-2xl font-bold text-white dark:text-gray-900">Muhammad Iqbal Al Baihaqi (TMJ CCIT - 1A)</h3>
+              </div>
+              <p class="text-gray-200 dark:text-gray-800 flex-grow">
+                Lahir tahun 24 september 2005  makanan kesukaan nasi padang dan tinggal di cibubut 5 keluarga dan mempunyai 2 adik asal dari sumatera
+              </p>
             </div>
-            <p class="text-gray-200 dark:text-gray-800 flex-grow">
-              To deliver stories that matter with integrity, depth, and impact—bridging 
-              the gap between truth and understanding.
-            </p>
-          </div>
+           </a>
 
           <!-- Card 3: Values -->
-          <div class="bg-yellow-500 dark:bg-yellow-400 p-6 rounded-xl shadow-lg flex flex-col">
-            <div class="flex items-center mb-4">
-              <img 
-                src="../assets/images/avatar.jpg" 
-                alt="Values Icon" 
-                class="w-16 h-16 rounded-full mr-4 object-cover"
-              />
-              <h3 class="text-2xl font-bold text-white dark:text-gray-900">Our Values</h3>
+           <a href="https://www.linkedin.com/in/yanuar-ismail-b93bb033a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <div class="bg-yellow-500 dark:bg-yellow-400 p-6 rounded-xl shadow-lg flex flex-col">
+              <div class="flex items-center mb-4">
+                <img 
+                  src="./../assets/images/profile/yanuar.jpg" 
+                  alt="Values Icon" 
+                  class="w-16 h-16 rounded-full mr-4 object-cover"
+                />
+                <h3 class="text-2xl font-bold text-white dark:text-gray-900">Yanuar Ismail (TKJ)</h3>
+              </div>
+              <p class="text-gray-200 dark:text-gray-800 flex-grow">
+                Halo, perkenalkan nama saya Yanuar Ismail seorang mahasiswa di Program Studi Teknik Komputer dan Jaringan (TKJ) di Politeknik Negeri Jakarta Saat ini, saya tengah mendalami berbagai aspek teknologi komputer dan jaringan yang terus berkembang pesat. Dengan minat saya dalam dunia IT, saya berfokus pada pembelajaran dan pengembangan keterampilan di bidang perangkat keras, perangkat lunak, serta manajemen dan keamanan jaringan.
+              </p>
             </div>
-            <p class="text-gray-200 dark:text-gray-800 flex-grow">
-              Integrity, transparency, and a relentless pursuit of truth guide every 
-              story we tell.
-            </p>
-          </div>
-
-          <!-- Card 4: Team -->
-          <div class="bg-red-500 dark:bg-red-400 p-6 rounded-xl shadow-lg sm:col-span-2 lg:col-span-1 flex flex-col">
-            <div class="flex items-center mb-4">
-              <img 
-                src="../assets/images/avatar.jpg" 
-                alt="Team Icon" 
-                class="w-16 h-16 rounded-full mr-4 object-cover"
-              />
-              <h3 class="text-2xl font-bold text-white dark:text-gray-900">Our Team</h3>
-            </div>
-            <p class="text-gray-200 dark:text-gray-800 flex-grow">
-              A dynamic team of journalists, editors, and creatives dedicated to 
-              delivering content that resonates and informs.
-            </p>
-          </div>
+           </a>
         </div>
       </div>
     </section>
 
     </div>
-        <!-- Footer -->
-        <footer
+     <footer
         class="bg-gray-900 dark:bg-gray-800 py-12 text-white dark:text-gray-300"
       >
         <div class="container  mx-auto px-6 grid grid-cols-3 gap-6">
           <!-- About -->
           <div>
-            <h3 class="text-xl font-bold mb-4">About StartedTech</h3>
+            <h3 class="text-xl font-bold mb-4">About Starter Tech</h3>
             <p class="text-sm">
-              Website ini bertujuan membantu mahasiswa Teknik Informatika dengan tips, panduan, dan sumber belajar 
-              untuk mendukung pengembangan keterampilan dan persiapan karir di bidang IT.
+              Website ini bertujuan membantu mahasiswa TIK.
             </p>
           </div>
           <!-- Quick Links -->
@@ -258,7 +219,7 @@
           </div>
           <div class="mt-96">
             <a href="../index.html" class="hover:text-indigo-400 transition text-2xl"
-                    >StarterTech</a
+                    >Starter Tech</a
                   >
           </div>
             </div>
@@ -269,21 +230,6 @@
         </div>
       </footer>
     <script>
-      const themeToggle = document.getElementById("themeToggle");
-      const html = document.documentElement;
-
-      themeToggle.addEventListener("click", () => {
-        html.classList.toggle("dark");
-        localStorage.setItem(
-          "theme",
-          html.classList.contains("dark") ? "dark" : "light"
-        );
-      });
-
-      if (localStorage.getItem("theme") === "dark") {
-        html.classList.add("dark");
-      }
-
       document
         .getElementById("hamburgerMenu")
         .addEventListener("click", function () {

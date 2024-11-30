@@ -16,103 +16,98 @@
     class="bg-primary-dark text-white dark:bg-primary-light dark:text-gray-900 min-h-screen transition-colors duration-300 font-sans"
   >
   <div class="container mx-auto px-6 py-8">
-    <!-- Theme Toggle -->
-    <div class="absolute top-4 right-6">
-      <button
-        id="themeToggle"
-        class="bg-primary-dark dark:bg-indigo-300 text-white dark:text-gray-800 px-4 py-2 rounded-full hover:shadow-lg transition"
-      >
-      </button>
-    </div>
-
     <!-- Header -->
     <header class="flex justify-between items-center p-4 relative">
-      <div class="flex items-center space-x-4">
-        <div
-          class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+  <!-- Logo dan Nama -->
+  <div class="flex items-center space-x-4">
+    <div
+      class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+    >
+      <span class="text-xl font-bold text-white">S.T</span>
+    </div>
+    <h1 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-gray-white dark:text-gray-100">
+      StarterTech
+    </h1>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
+    <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+    <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+    <div class="w-6 h-1 bg-gray-600"></div>
+  </div>
+
+  <!-- Desktop Navigation -->
+  <nav class="hidden md:block">
+    <ul class="flex space-x-6">
+      <li>
+        <a
+          href="../index.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >Home</a
         >
-          <span class="text-xl font-bold">S.T</span>
-        </div>
-        <h1 class="text-4xl font-extrabold tracking-wider dark:text-gray-800">
-          StarterTech
-        </h1>
-      </div>
+      </li>
+      <li>
+        <a
+          href="blog.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >Blogs</a
+        >
+      </li>
+      <li>
+        <a
+          href="about-us.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          href="contact.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >Contact Us</a
+        >
+      </li>
+    </ul>
+  </nav>
 
-      <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
-        <div class="w-6 h-1 bg-gray-600 mb-1"></div>
-        <div class="w-6 h-1 bg-gray-600 mb-1"></div>
-        <div class="w-6 h-1 bg-gray-600"></div>
-      </div>
-
-      <nav class="hidden md:block">
-        <ul class="flex space-x-6">
-          <li>
-            <a
-              href="../index.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="blog.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >Blogs</a
-            >
-          </li>
-          <li>
-            <a
-              href="about-us.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <nav
-        id="mobileMenu"
-        class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
-      >
-        <ul class="flex flex-col items-center py-4 space-y-4">
-          <li>
-            <a
-              href="../index.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="blog.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              href="about-us.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <!-- Mobile Navigation -->
+  <nav
+    id="mobileMenu"
+    class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
+  >
+    <ul class="flex flex-col items-center py-4 space-y-4">
+      <li>
+        <a
+          href="../index.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="blog.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >Blogs</a
+        >
+      </li>
+      <li>
+        <a
+          href="about-us.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          href="contact.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >Contact Us</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
 
       <div class="max-w-4xl mx-auto px-4 py-12 bg-inherit rounded-lg my-8">
         <!-- Main Article -->
@@ -126,7 +121,7 @@
           >
             More Blogs
           </h2>
-          <div class="grid md:grid-cols-3 gap-6">
+          <div class="grid md:grid-cols-3 gap-6" id="more-blogs">
             <div
               class="bg-secondary-dark dark:bg-secondary-light rounded-xl overflow-hidden shadow-xl transform transition"
             >
@@ -197,89 +192,66 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer
-      class="bg-gray-900 dark:bg-gray-800 py-12 text-white dark:text-gray-300"
-    >
-      <div class="container mx-auto px-6 grid grid-cols-3 gap-6">
-        <!-- About -->
-        <div>
-          <h3 class="text-xl font-bold mb-4">About Nexus News</h3>
-          <p class="text-sm">
-            Nexus Global News delivers breaking stories and insightful analysis
-            from every corner of the world. Your go-to source for reliable news.
-          </p>
-        </div>
-        <!-- Quick Links -->
-        <div>
-          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="pages/about-us.html"
-                class="hover:text-indigo-400 transition"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a href="pages/blog.html" class="hover:text-indigo-400 transition"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                href="pages/contact.html"
-                class="hover:text-indigo-400 transition"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- Social Media -->
-        <div>
+    
+        <footer
+        class="bg-gray-900 dark:bg-gray-800 py-12 text-white dark:text-gray-300"
+      >
+        <div class="container  mx-auto px-6 grid grid-cols-3 gap-6">
+          <!-- About -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">About Starter Tech</h3>
+            <p class="text-sm">
+              Website ini bertujuan membantu mahasiswa TIK.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="about-us.html"
+                  class="hover:text-indigo-400 transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="blog.html" class="hover:text-indigo-400 transition"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:text-indigo-400 transition"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
             <h3 class="text-xl font-bold mb-4">Follow Us</h3>
             <div class="sm:flex sm:space-x-4 space-y-4 sm:space-y-0">
-              <a
-                href="#"
-                class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
-              >
-                <i class="fa fa-facebook-f text-xl"></i>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
-              >
-                <i class="fa fa-twitter text-lg"></i>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-indigo-500 transition"
-              >
-                <i class="fa fa-instagram text-lg"></i>
-              </a>
+              <div
+            class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+          >
+            <span class="text-xl font-bold">S.T</span>
+          </div>
+          <div class="mt-96">
+            <a href="../index.html" class="hover:text-indigo-400 transition text-2xl"
+                    >Starter Tech</a
+                  >
+          </div>
             </div>
-          </div>   
-      </div>
-      <div class="text-center mt-8 text-sm text-gray-500">
-        © 2024 Nexus Global News. All rights reserved.
-      </div>
-    </footer>
+          </div>
+        </div>
+        <div class="text-center mt-8 text-sm text-gray-500">
+          © 2024 StartedTech. All rights reserved.
+        </div>
+      </footer>
+
     <script src="./../assets/js/single-blog.js"></script>
     <script>
-      const themeToggle = document.getElementById("themeToggle");
-      const html = document.documentElement;
-
-      themeToggle.addEventListener("click", () => {
-        html.classList.toggle("dark");
-        localStorage.setItem(
-          "theme",
-          html.classList.contains("dark") ? "dark" : "light"
-        );
-      });
-
-      if (localStorage.getItem("theme") === "dark") {
-        html.classList.add("dark");
-      }
-
       document
         .getElementById("hamburgerMenu")
         .addEventListener("click", function () {

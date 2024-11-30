@@ -26,105 +26,105 @@
     class="bg-primary-dark text-white dark:bg-primary-light dark:text-gray-900 min-h-screen transition-colors duration-300 font-sans"
   >
   <div class="container mx-auto px-6 py-8">
-    <!-- Theme Toggle -->
-    <div class="absolute top-4 right-6">
-      <button
-        id="themeToggle"
-        class="bg-primary-dark dark:bg-indigo-300 hidden md:hidden text-white dark:text-gray-800 px-4 py-2 rounded-full hover:shadow-lg transition"
-      >
-      </button>
-    </div>
 
-    <!-- Header -->
     <header class="flex justify-between items-center p-4 relative">
-      <div class="flex items-center space-x-4">
-        <div
-          class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+  <!-- Logo dan Nama -->
+  <div class="flex items-center space-x-4">
+    <div
+      class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+    >
+      <span class="text-xl font-bold text-white">S.T</span>
+    </div>
+    <h1 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-gray-white dark:text-gray-100">
+      StarterTech
+    </h1>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
+    <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+    <div class="w-6 h-1 bg-gray-600 mb-1"></div>
+    <div class="w-6 h-1 bg-gray-600"></div>
+  </div>
+
+  <!-- Desktop Navigation -->
+  <nav class="hidden md:block">
+    <ul class="flex space-x-6">
+      <li>
+        <a
+          href="../index.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >Home</a
         >
-          <span class="text-xl font-bold">S.T</span>
-        </div>
-        <h1 class="text-4xl font-extrabold tracking-wider dark:text-gray-800">
-          StarterTech
-        </h1>
-      </div>
+      </li>
+      <li>
+        <a
+          href="pages/blog.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >Blogs</a
+        >
+      </li>
+      <li>
+        <a
+          href="pages/about-us.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          href="pages/contact.html"
+          class="text-lg text-white dark:text-gray-300 hover:text-indigo-500 transition"
+          >Contact Us</a
+        >
+      </li>
+    </ul>
+  </nav>
 
-      <div class="md:hidden cursor-pointer z-50" id="hamburgerMenu">
-        <div class="w-6 h-1 bg-gray-600 mb-1"></div>
-        <div class="w-6 h-1 bg-gray-600 mb-1"></div>
-        <div class="w-6 h-1 bg-gray-600"></div>
-      </div>
+  <!-- Mobile Navigation -->
+  <nav
+    id="mobileMenu"
+    class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
+  >
+    <ul class="flex flex-col items-center py-4 space-y-4">
+      <li>
+        <a
+          href="../index.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="pages/blog.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >Blogs</a
+        >
+      </li>
+      <li>
+        <a
+          href="pages/about-us.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          href="pages/contact.html"
+          class="text-lg text-gray-700 hover:text-indigo-500 transition"
+          >Contact Us</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
 
-      <nav class="hidden md:block">
-        <ul class="flex space-x-6">
-          <li>
-            <a
-              href="#"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="pages/blog.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >Blogs</a
-            >
-          </li>
-          <li>
-            <a
-              href="pages/about-us.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a
-              href="pages/contact.html"
-              class="text-lg text-gray-300 dark:text-gray-700 hover:text-indigo-400 transition"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <nav
-        id="mobileMenu"
-        class="hidden absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
-      >
-        <ul class="flex flex-col items-center py-4 space-y-4">
-          <li>
-            <a
-              href="pages/single-blog.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="pages/single-blog.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a
-              href="pages/single-blog.html"
-              class="text-lg text-gray-700 hover:text-indigo-400"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="h-16"></div>
-
-      <section class="py-12 px-6">
+      <section class="py-4 px-6">
         <!-- Main Content Grid -->
         <div class="">
           <!-- Featured Article -->
           <div
-            class="lg:col-span-2 bg-secondary-dark dark:bg-secondary-light rounded-xl overflow-hidden shadow-2xl transform transition hover:scale-[1.02]"
+            class=" bg-secondary-dark dark:bg-secondary-light rounded-xl overflow-hidden shadow-2xl"
           >
             <img
               src="assets/images/background.jpg"
@@ -146,7 +146,7 @@
               website ini diharapkan menjadi sumber inspirasi dan panduan bagi mahasiswa untuk meraih kesuksesan.
               </p>
               <a
-                href="pages/single-blog.html"
+                href="pages/blog.html"
                 class="inline-block bg-indigo-500 dark:bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition"
               >
                 Get Started
@@ -156,7 +156,7 @@
         </div>
 
         <!-- News Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12" id="news-section">
           <div
             class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-6 shadow-lg transform transition hover:scale-105"
           >
@@ -172,46 +172,6 @@
             </h3>
             <p class="text-base text-gray-400 dark:text-gray-700">
               Cara Efektif Menguasai Pemrograman Sejak Semester Awal
-            </p>
-            <a href="pages/blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
-              Read More →
-          </a>
-          </div>
-          <div
-            class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-6 shadow-lg transform transition hover:scale-105"
-          >
-            <img
-              src="assets/images/manajemen_waktu.jpeg"
-              alt="News 2"
-              class="w-[600px] h-[280px] rounded-lg mb-4"
-            />
-            <h3
-              class="text-xl font-semibold text-indigo-400 dark:text-indigo-600"
-            >
-              Manajemen Waktu
-            </h3>
-            <p class="text-base text-gray-400 dark:text-gray-700">
-              Manajemen Waktu: Kunci Sukses di Dunia Teknik Informatika
-            </p>
-            <a href="pages/blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
-              Read More →
-          </a>
-          </div>
-          <div
-            class="bg-secondary-dark dark:bg-secondary-light rounded-xl p-6 shadow-lg transform transition hover:scale-105"
-          >
-            <img
-              src="assets/images/sumber_belajar.jpg"
-              alt="News 3"
-              class="w-[400px] h-[280px] rounded-lg mb-4"
-            />
-            <h3
-              class="text-xl font-semibold text-indigo-400 dark:text-indigo-600"
-            >
-              5 Sumber Belajar
-            </h3>
-            <p class="text-base text-gray-400 dark:text-gray-700">
-              5 Sumber Belajar Gratis untuk Mahasiswa Teknik Informatika
             </p>
             <a href="pages/blog.html" class="text-sm text-indigo-400 hover:text-indigo-600 transition">
               Read More →
@@ -250,81 +210,67 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer
-      class="bg-gray-900 dark:bg-gray-800 py-12 text-white dark:text-gray-300"
-    >
-      <div class="container  mx-auto px-6 grid grid-cols-3 gap-6">
-        <!-- About -->
-        <div>
-          <h3 class="text-xl font-bold mb-4">About StartedTech</h3>
-          <p class="text-sm">
-            Website ini bertujuan membantu mahasiswa Teknik Informatika dengan tips, panduan, dan sumber belajar 
-            untuk mendukung pengembangan keterampilan dan persiapan karir di bidang IT.
-          </p>
-        </div>
-        <!-- Quick Links -->
-        <div>
-          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="pages/about-us.html"
-                class="hover:text-indigo-400 transition"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a href="pages/blog.html" class="hover:text-indigo-400 transition"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                href="pages/contact.html"
-                class="hover:text-indigo-400 transition"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-4">Follow Us</h3>
-          <div class="sm:flex sm:space-x-4 space-y-4 sm:space-y-0">
-            <div
-          class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
-        >
-          <span class="text-xl font-bold">S.T</span>
-        </div>
-        <div class="mt-96">
-          <a href="pages/blog.html" class="hover:text-indigo-400 transition text-2xl"
-                  >StarterTech</a
+<!-- Footer -->
+        <footer
+        class="bg-gray-900 dark:bg-gray-800 py-12 text-white dark:text-gray-300"
+      >
+        <div class="container  mx-auto px-6 grid grid-cols-3 gap-6">
+          <!-- About -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">About Starter Tech</h3>
+            <p class="text-sm">
+              Website ini bertujuan membantu mahasiswa TIK.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="pages/about-us.html"
+                  class="hover:text-indigo-400 transition"
+                  >About Us</a
                 >
-        </div>
+              </li>
+              <li>
+                <a href="pages/blog.html" class="hover:text-indigo-400 transition"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/contact.html"
+                  class="hover:text-indigo-400 transition"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+            <div class="sm:flex sm:space-x-4 space-y-4 sm:space-y-0">
+              <div
+            class="w-12 h-12 bg-indigo-500 dark:bg-indigo-600 rounded-full flex items-center justify-center"
+          >
+            <span class="text-xl font-bold">S.T</span>
+          </div>
+          <div class="mt-96">
+            <a href="index.html" class="hover:text-indigo-400 transition text-2xl"
+                    >Starter Tech</a
+                  >
+          </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="text-center mt-8 text-sm text-gray-500">
-        © 2024 StartedTech. All rights reserved.
-      </div>
-    </footer>
+        <div class="text-center mt-8 text-sm text-gray-500">
+          © 2024 StartedTech. All rights reserved.
+        </div>
+      </footer>
+
+    <script src="./assets/js/index-blog.js"></script>
 
     <script>
-      const themeToggle = document.getElementById("themeToggle");
-      const html = document.documentElement;
-
-      themeToggle.addEventListener("click", () => {
-        html.classList.toggle("dark");
-        localStorage.setItem(
-          "theme",
-          html.classList.contains("dark") ? "dark" : "light"
-        );
-      });
-
-      if (localStorage.getItem("theme") === "dark") {
-        html.classList.add("dark");
-      }
-
       document
         .getElementById("hamburgerMenu")
         .addEventListener("click", function () {
