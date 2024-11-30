@@ -4,6 +4,16 @@ const fetchData = async () => {
     return data;
 }
 
+const getDataBySlug = (data, slug) => {
+    let data = data.find(item => {
+        if(item.slug == slug) {
+            return item;
+        }
+    });
+
+    return data;
+}
+
 const renderData = async () => {
     const articleSection = document.getElementById('article-section')
     const queryString = window.location.search;
